@@ -13,7 +13,7 @@ For 2020 and onward, we started using a React app with a flask backend.
 Archive
 -------
 
-workshop - 2019 and earlier
-v1 - 2020
-v2 - 2021
-v3 - 2022
+    * workshop - 2019 and earlier
+    * v1 - 2020
+    * v2 - 2021
+    * v3 - 2022
