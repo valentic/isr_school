@@ -1,0 +1,24 @@
+import React from 'react'
+import { Navbar } from './navbar'
+import { Responsive, Grid } from 'semantic-ui-react'
+
+const Header = () => {
+
+    return (
+        <header>
+          <Grid verticalAlign='middle'> 
+            <Grid.Column textAlign='left' width={12}>
+              <h1>
+              <Responsive as={'span'} minWidth={Responsive.onlyTablet.minWidth}>The ISR Summer School</Responsive>
+              </h1>
+            </Grid.Column>
+            <Grid.Column textAlign='right' width={4}>
+              <Navbar />
+            </Grid.Column>
+          </Grid>
+        </header>
+    )
+
+}
+
+export { Header }

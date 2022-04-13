@@ -1,0 +1,58 @@
+main {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    background-color: #EEE;
+}
+
+header {
+    background-color: #1678c2;
+    /*background-image: linear-gradient(-255deg,#3DB0EF,#5E5BB7);*/
+    box-shadow: 2px 0 4px #777;
+    z-index: 100;
+    color: white;
+    padding: 0.5rem;
+}
+
+header h1 {
+    margin: 0.25em;
+    font-size: 1.75em;
+    text-transform: uppercase;
+    //font-family: 'PT Sans Narrow', Roboto, san-serif;
+    font-family: Roboto, san-serif;
+    font-size: 30px;
+    font-weight: 400;
+}
+
+header h1 strong {
+    margin-right: 0.25em;
+    text-transform: none;
+    font-weight: 700;
+}
+
+header .center {
+    flex-grow: 1;
+    text-align: center;
+}
+
+footer { 
+    margin-top: 1em;
+    padding: 1em;
+    background-color: lightgrey; 
+    color: #888;
+    text-align: center;
+    font-size: smaller;
+    font-weight: bold;
+}
+
+article {
+    flex: 1;
+}
+
+.admin { 
+    margin: 2em;
+}
+
+header .ui.menu {
+    margin-top: 0;
+}

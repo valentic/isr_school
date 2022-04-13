@@ -1,0 +1,22 @@
+Ashton Reimer
+16 Mar 2021
+
+Removed application buttons from school site
+
+--------------------------------------
+
+Ashton Reimer
+8 Jan 2021
+
+Update the 2020 school site for 2021.
+
+
+- copied v1 into v2.
+-- changed all paths in venvs files to replace "v1" with "v2"
+- changed REACT_APP_ROOT_URL in devel/frontend
+- updated the text in devel/frontend/src/pages/home/HomePage.js for 2021 school and renabled the "apply" button by changing the 0 to a 1 in the if statement
+- updated the text in the files in devel/backend/server/routes/templates/api
+- change "v1" to "v2" in restart
+- modified /etc/supervisord.d/isr_school.ini to autostart the v2 prod site, but never autostart the v1 nor the devel sites
+
+

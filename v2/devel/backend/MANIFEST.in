@@ -1,0 +1,6 @@
+include CHANGES Makefile launcher
+graft server/static
+graft server/templates
+graft server/routes
+graft server/mirgrations
+global-exclude *.pyc

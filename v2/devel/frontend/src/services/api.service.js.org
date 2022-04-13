@@ -1,0 +1,31 @@
+import { authHeader } from 'support/helpers'
+
+const BASEURL = window.location.origin+process.env.REACT_APP_API_URL
+
+export const apiService = {
+    submitApplication 
+}
+
+function submitApplication() {
+    const requestOptions = {
+        method: 'GET',
+        headers: {
+            ...{ 'Content-Type': 'text/html' },
+            ...authHeader() 
+            }
+    }
+
+    return fetch(`${BASEURL}/jupyter`,requestOptions)
+        .then(handleResponse)
+}
+
+function handleResponse(response) {
+    if (!response.ok) {
+        //alert(response.statusText)
+        window.location = '/v3/logout'
+    } else if (response.redirected) {
+        window.open(response.url,'JupyterFrame')
+        //window.open(response.url,'_blank')
+    }
+}
+

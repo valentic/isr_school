@@ -1,0 +1,3 @@
+#!/bin/sh
+
+supervisorctl restart isr_school.v1-prod

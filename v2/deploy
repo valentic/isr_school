@@ -1,0 +1,23 @@
+#!/bin/sh
+
+# https://stackoverflow.com/questions/59895/how-to-get-the-source-directory-of-a-bash-script-from-within-the-script-itself
+
+DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" >/dev/null 2>&1 && pwd )"
+
+
+cd ${DIR}/devel/frontend
+yarn build
+
+cd ${DIR}/devel/backend
+make wheel
+
+cd ${DIR}/prod
+. venv/bin/activate
+
+WHEEL=$(find ${DIR}/devel/backend -name "*.whl" -type f -print0 | xargs -r -0 ls -1 -t | head -1)
+
+echo "The wheel is $WHEEL"
+
+pip install -U ${WHEEL} 
+
+
