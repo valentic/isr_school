@@ -9,7 +9,7 @@ from email.mime.multipart import MIMEMultipart
 
 import smtplib
 from . import history
-from .util import admin_required, role_required
+from .util import role_required
 
 bp = Blueprint('admin',__name__,url_prefix='/admin')
 api = Api(bp)
@@ -228,7 +228,7 @@ class HandleApplication(Resource):
 
 class ListPending(Resource):
 
-    @admin_required
+    @role_required('admin')
     @marshal_with(user_fields, envelope='users')
     def get(self):
         return model.User.query.filter_by(pending=True).all()
@@ -300,7 +300,7 @@ class ApproveUser(Resource):
     parser = reqparse.RequestParser()
     parser.add_argument('username',type=str,required=True)
 
-    @admin_required
+    @role_required('admin')
     def post(self):
 
         data = self.parser.parse_args()
@@ -329,7 +329,7 @@ class DenyUser(Resource):
     parser = reqparse.RequestParser()
     parser.add_argument('username',type=str,required=True)
 
-    @admin_required
+    @role_required('admin')
     def post(self):
 
         data = self.parser.parse_args()
