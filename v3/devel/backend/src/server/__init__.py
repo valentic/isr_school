@@ -136,7 +136,6 @@ def load_blueprints(app):
     from .routes import api
     from .routes import auth
     from .routes import admin
-    from .routes import socket
 
     app.register_blueprint(main.bp)
     app.register_blueprint(api.bp)
