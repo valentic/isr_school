@@ -43,23 +43,6 @@ def convert(obj):
     return record
 
 ##########################################################################
-#   Decorator requiring a user to be an admin for access 
-##########################################################################
-
-def admin_required(fn):
-    @functools.wraps(fn)
-    def wrapper(*args, **kwargs):
-        verify_jwt_in_request()
-        username = get_jwt_identity()
-        user = model.User.query.filter_by(username=username).first()
-
-        if not user or not user.admin:
-            abort(401,message='Unuathorized')
-
-        return fn(*args, **kwargs)
-    return wrapper
-
-##########################################################################
 #   Decorator requiring a user to be in a role for access 
 ##########################################################################
 
