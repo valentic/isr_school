@@ -133,7 +133,17 @@ const Home = () => {
             <p>
             The overall aim of the ISR school is provide a "hands-on"
             learning experience in small groups, and includes substantial
-            interactions with instructors.
+            interactions with instructors. At this school, students will learn:
+
+            <ul>
+              <li>How the ionosphere forms and why it is important.</li>
+              <li>The physical principles of incoherent scatter radar.</li> 
+              <li>The mathematical principles of radar signal processing.</li>
+              <li>How to design and run an ISR experiment.</li>
+              <li>How to extract and visualize data from the Madrigal database.</li>
+              <li>How ISR complements and adds insight to other observations.</li>
+            </ul>
+
             </p>
 
             <p>
@@ -142,7 +152,7 @@ const Home = () => {
             for the 2022 ISR summer school and are enrolled at
             U.S. Universities/institutions will receive travel support
             and accommodation to attend this event. Self-funded students
-            from other countries are welcome to apply as well.
+            from institutions in other countries are welcome to apply as well.
             </p>
 
             <p>
