@@ -7,6 +7,7 @@ import {
     Button, 
     Divider, 
     Center,
+    Text,
     createStyles,
     } from '@mantine/core'
 
@@ -105,9 +106,13 @@ const Home = () => {
                 </div>
               </Grid.Col>
               <Grid.Col sm={4}>
+                { 0 ? (
+                <>
                 <Button component={Link} to="/apply" size="md" leftIcon={<Edit />}>
                     Apply now!
                 </Button>
+                <Text color="blue" size="sm" mt="1em">Deadline is April 27, 2022</Text>
+                </>) : null }
               </Grid.Col>
             </Grid>
 
@@ -163,11 +168,11 @@ const Home = () => {
             </p>
 
             <p>
-            <i><b>The deadline for application submission is April 20, 2022.</b></i>
+            <i><b>The deadline for application submission is April 27, 2022.</b></i>
             </p>
 
             <p>
-            Notice of acceptance will be sent to participants by May 1, 2022.
+            Notice of acceptance will be sent to participants by May 2, 2022.
             </p>
 
             <p>

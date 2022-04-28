@@ -164,6 +164,14 @@ const Application = () => {
         return <ErrorMessage message={mutation.error.message} /> 
     }
 
+    if (1) {
+        return ( 
+            <Container size="sm" my="1em" p="1em" className={classes.container}>
+                <Text>The application process has closed.</Text> 
+            </Container>
+        )
+    }
+
     return (
         <Container size="sm" my="1em" p="1em" className={classes.container}>
             
