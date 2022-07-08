@@ -88,6 +88,8 @@ const Home = () => {
         { src: logo_ucf, alt: "UCF"    }
         ]
 
+    const accepting = false
+
     return (
         <Container>
 
@@ -106,7 +108,7 @@ const Home = () => {
                 </div>
               </Grid.Col>
               <Grid.Col sm={4}>
-                { 0 ? (
+                { accepting ? (
                 <>
                 <Button component={Link} to="/apply" size="md" leftIcon={<Edit />}>
                     Apply now!
@@ -168,7 +170,8 @@ const Home = () => {
             </p>
 
             <p>
-            <i><b>The deadline for application submission is April 27, 2022.</b></i>
+            <i><b>The deadline for application submission{" "}
+            { accepting ? "is" : "was" } April 27, 2022.</b></i>
             </p>
 
             <p>
@@ -214,13 +217,20 @@ const Home = () => {
             </Grid>
 
             <p>
+            Details of 2022 ISR summer School can be found{" "}
+            <a href="https://tinyurl.com/2022ISR">
+            here
+            </a>.
+            </p>
+
+            <p>
             Details of 2021 ISR summer School can be found{" "}
             <a href="https://wikis.mit.edu/confluence/display/ASGScience/ISR+School+2021">
             here
             </a>.
             </p>
 
-            <Center my={20}> 
+           <Center my={20}> 
               { logoList.map((logo) => (
                 <img key={logo.alt} src={logo.src} alt={logo.alt} className={classes.logo} />
                ))}

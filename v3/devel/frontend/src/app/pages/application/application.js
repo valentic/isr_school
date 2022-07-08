@@ -167,7 +167,7 @@ const Application = () => {
     if (1) {
         return ( 
             <Container size="sm" my="1em" p="1em" className={classes.container}>
-                <Text>The application process has closed.</Text> 
+                <Text>The application deadline has passed.</Text> 
             </Container>
         )
     }
