@@ -1,0 +1,46 @@
+#!/bin/sh
+
+# Remove existing packages
+
+rm -rf node_modules yarn.lock
+
+# Install development packages
+
+yarn add --dev @babel/core
+yarn add --dev @babel/plugin-proposal-private-property-in-object
+yarn add --dev @babel/plugin-syntax-dflow
+yarn add --dev @babel/plugin-syntax-flow
+yarn add --dev @babel/plugin-transform-react-jsx
+yarn add --dev typescript
+
+# Install packages
+
+yarn add @emotion/core
+
+yarn add @mantine/core
+yarn add @mantine/dates
+yarn add @mantine/form
+yarn add @mantine/hooks
+yarn add @mantine/modals
+yarn add @mantine/notifications
+
+yarn add @tabler/icons
+yarn add @tanstack/react-query
+yarn add axios
+yarn add dayjs
+yarn add dayjs-plugin-utc
+yarn add easy-peasy
+yarn add export-to-csv-fix-source-map
+yarn add http-proxy-middleware
+yarn add jwt-decode
+yarn add luxon
+yarn add moment-timezone
+yarn add prop-types
+
+yarn add react
+yarn add react-country-region-selector
+yarn add react-dom
+yarn add react-hook-form
+yarn add react-router-dom
+yarn add react-scripts
+yarn add redux-timer-middleware
