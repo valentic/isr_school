@@ -122,8 +122,8 @@ const Home = () => {
 
             <p>
             The NSF funded 2023 Incoherent Scatter Radar (ISR) Summer
-            School (in-person) is planned to be held at University
-            of Fairbanks (Alaska) between July 17-22, 2023. The
+            School (in-person) is planned to be held at the University
+            of Alaska (Fairbanks) between July 17-22, 2023. The
             summer school’s goal is to train students in the theory
             and concepts of incoherent scatter radar and allows for
             hands-on opportunities to design and run experiments at ISR

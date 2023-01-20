@@ -1,5 +1,5 @@
 [build-system]
-requires = ["setuptools", "wheel"]
+requires = ["setuptools>=61.0", "wheel"]
 build-backend = "setuptools.build_meta"
 
 [project]
@@ -72,7 +72,7 @@ server-launch = "server.commands:launch"
 [tool.setuptools.packages.find]
 where = ["src"]
 
-[tools.setuptools.dynamic]
+[tool.setuptools.dynamic]
 version = { attr = "server.metadata.version" }
 
 [tools.pytest.ini_options]

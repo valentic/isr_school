@@ -85,4 +85,10 @@
     - Update sitecmd to latest release
     - Update packaging to use pyproject.toml
 
+2023-01-17 Todd Valentic
+    - Release 4.0.1 
+    - Fix UAF name 
+    - Fix version info in pyproject.toml
+
+
 
