@@ -90,5 +90,9 @@
     - Fix UAF name 
     - Fix version info in pyproject.toml
 
+2023-03-06 Todd Valentic
+    - Release 4.0.2
+    - Add Andrey Krywonos (new PI)
+
 
 

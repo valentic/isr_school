@@ -14,7 +14,18 @@ const Contacts = () => {
        
           <p>
           For more information about the school, please contact:{" "}
-          <a href="mailto:shikha.raizada@ucf.edu">shikha.raizada@ucf.edu</a>.
+          <table>
+            <tbody>
+              <tr>
+                <td>Andrey Krywonos</td>
+                <td><a href="mailto:krywonos@ucf.edu">kywonos@ucf.edu</a></td>
+              </tr>
+              <tr>
+                <td>Shikha Raizada</td>
+                <td><a href="mailto:shikha.raizada@ucf.edu">shikha.raizada@ucf.edu</a></td>
+              </tr>
+            </tbody>
+          </table>
           </p>
          
         </Container>

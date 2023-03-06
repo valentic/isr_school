@@ -191,9 +191,10 @@ const Home = () => {
             ISR summer school organizing committee: 
             </p>
 
-            <Grid justify="center" align="center">
+            <Grid justify="center" align="top">
               <Grid.Col sm={3}>
                 <ul>
+                  <li>Andrey Kywonos</li>
                   <li>Shikha Raizada</li>
                   <li>Anthea Coster</li>
                 </ul>
