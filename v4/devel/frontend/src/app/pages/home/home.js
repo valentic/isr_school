@@ -194,7 +194,7 @@ const Home = () => {
             <Grid justify="center" align="top">
               <Grid.Col sm={3}>
                 <ul>
-                  <li>Andrey Kywonos</li>
+                  <li>Andrey Krywonos</li>
                   <li>Shikha Raizada</li>
                   <li>Anthea Coster</li>
                 </ul>

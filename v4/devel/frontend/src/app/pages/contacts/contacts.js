@@ -18,7 +18,7 @@ const Contacts = () => {
             <tbody>
               <tr>
                 <td>Andrey Krywonos</td>
-                <td><a href="mailto:krywonos@ucf.edu">kywonos@ucf.edu</a></td>
+                <td><a href="mailto:krywonos@ucf.edu">krywonos@ucf.edu</a></td>
               </tr>
               <tr>
                 <td>Shikha Raizada</td>
