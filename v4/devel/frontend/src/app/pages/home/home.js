@@ -113,7 +113,7 @@ const Home = () => {
                 <Button component={Link} to="/apply" size="md" leftIcon={<IconEdit />}>
                     Apply now!
                 </Button>
-                <Text color="blue" size="sm" mt="1em">Deadline is March 10, 2023</Text>
+                <Text color="blue" size="sm" mt="1em">Deadline extended to March 17, 2023</Text>
                 </>) : null }
               </Grid.Col>
             </Grid>
@@ -173,7 +173,7 @@ const Home = () => {
 
             <p>
             <i><b>The deadline for application submission{" "}
-            { accepting ? "is" : "was" } March 10, 2023.</b></i>
+            { accepting ? "is" : "was" } March 17, 2023.</b></i>
             </p>
 
             <p>
