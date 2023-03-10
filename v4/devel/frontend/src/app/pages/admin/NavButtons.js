@@ -25,7 +25,7 @@ const NavButton = ({ linkId, curId, children, ...props}) => {
     }
 
     return (
-        <Button component={Link} {...props} disabled to={url}>
+        <Button component={Link} {...props} to={url}>
             { children }
         </Button>
     )
