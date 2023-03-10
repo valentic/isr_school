@@ -107,14 +107,16 @@ const Home = () => {
                   July 17 - 22, 2023
                 </div>
               </Grid.Col>
-              <Grid.Col sm={4}>
+              <Grid.Col sm={4}> 
                 { accepting ? (
-                <>
-                <Button component={Link} to="/apply" size="md" leftIcon={<IconEdit />}>
-                    Apply now!
-                </Button>
-                <Text color="blue" size="sm" mt="1em">Deadline extended to March 17, 2023</Text>
-                </>) : null }
+                <Box sx={(theme) => ({ textAlign: 'center' })}>
+                    <Button component={Link} to="/apply" size="md" leftIcon={<IconEdit />} >
+                        Apply now!
+                    </Button>
+                    <Text color="blue" ta="center" size="sm" mt="1em" >
+                        Deadline extended to <br/> March 24, 2023
+                    </Text>
+                </Box>) : null }
               </Grid.Col>
             </Grid>
 
@@ -173,11 +175,11 @@ const Home = () => {
 
             <p>
             <i><b>The deadline for application submission{" "}
-            { accepting ? "is" : "was" } March 17, 2023.</b></i>
+            { accepting ? "is" : "was" } March 24, 2023.</b></i>
             </p>
 
             <p>
-            Notice of acceptance will be sent to participants by March 24, 2023.
+            Notice of acceptance will be sent to participants by March 31, 2023.
             </p>
 
             <p>
