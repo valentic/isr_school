@@ -38,6 +38,7 @@ const App = () => {
               <Route path="admin" element={<Page.Admin.Home />} > 
                 <Route path="applications"> 
                   <Route index element={<Page.Admin.Applications.Active.List />} />
+                  <Route path="pdf" element={<Page.Admin.Applications.Active.PDF />} />
                   <Route path=":id" element={<Page.Admin.Applications.Active.Detail />} />
                 </Route>
                 <Route element={<ProtectedRoute isAllowed={is_admin || is_manager} />}>

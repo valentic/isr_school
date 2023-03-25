@@ -1,5 +1,5 @@
 import React from 'react'
-import { Outlet } from 'react-router-dom'
+import { useNavigate, Outlet } from 'react-router-dom'
 import { ApplicationTable } from './ApplicationTable'
 import { useApplicationsActive } from './ApplicationQuery'
 import { useApplicationsTrash } from './ApplicationQuery'
@@ -8,6 +8,7 @@ import { IconDownload } from '@tabler/icons'
 
 import {
     Container,
+    Flex,
     Title,
     LoadingOverlay,
     Button
@@ -22,6 +23,7 @@ const applicationExporter = new ExportToCsv({
 const ApplicationListView = ({queryFunc, download }) => {
 
     const query = queryFunc() 
+    const navigate = useNavigate()
 
     if (query.isError) {
         return (
@@ -36,13 +38,32 @@ const ApplicationListView = ({queryFunc, download }) => {
         return <LoadingOverlay visible />
     }
 
-    const handleDownload = async () => {
+    const handleCSV = async () => {
         applicationExporter.generateCsv(query.data)
+    }
+
+    const downloadPDF = () => {
+        navigate('pdf') 
     }
 
     return (
         <>
-          { download ? <Button onClick={handleDownload} leftIcon={<IconDownload/>}>Download as CSV</Button> : null }
+          { download ? 
+              <Flex
+                gap="md"
+                justify="flex-start"
+                align="center"
+                direction="row"
+                wrap="wrap"
+              >
+                <Button onClick={handleCSV} leftIcon={<IconDownload/>}>
+                  Download as CSV
+                </Button>
+                <Button onClick={downloadPDF} >
+                  PDF
+                </Button>
+              </Flex> : null 
+          }
           <ApplicationTable applications={query.data} />
           <Outlet />
         </>

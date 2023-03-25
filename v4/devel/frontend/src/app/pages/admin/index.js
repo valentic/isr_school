@@ -1,6 +1,7 @@
 import { AdminHome } from './AdminHome'
 import { ApplicationList } from './ApplicationList'
 import { ApplicationDetail } from './ApplicationDetail'
+import { ApplicationDownloadPDF } from './ApplicationDownloadPDF'
 import { UserList } from './UserList'
 import { UserView } from './UserView'
 import { UserCreate } from './UserCreate'
@@ -14,7 +15,8 @@ const Admin = {
     Applications: {
         Active: {
             List:   ApplicationList.Active, 
-            Detail: ApplicationDetail.Active
+            Detail: ApplicationDetail.Active,
+            PDF:    ApplicationDownloadPDF
         },
         Trash: {
             List:   ApplicationList.Trash, 
