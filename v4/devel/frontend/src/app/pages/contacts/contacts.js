@@ -20,10 +20,6 @@ const Contacts = () => {
                 <td>Andrey Krywonos</td>
                 <td><a href="mailto:krywonos@ucf.edu">krywonos@ucf.edu</a></td>
               </tr>
-              <tr>
-                <td>Shikha Raizada</td>
-                <td><a href="mailto:shikha.raizada@ucf.edu">shikha.raizada@ucf.edu</a></td>
-              </tr>
             </tbody>
           </table>
           </p>

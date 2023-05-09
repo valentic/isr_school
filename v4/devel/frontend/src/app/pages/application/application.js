@@ -163,10 +163,10 @@ const Application = () => {
         return <ErrorMessage message={mutation.error.message} /> 
     }
 
-    if (0) {
+    if (process.env.REACT_APP_ACCEPTING === 'false') {
         return ( 
-            <Container size="sm" my="1em" p="1em" className={classes.container}>
-                <Text>The application deadline has passed.</Text> 
+            <Container size="sm" my="1em" p="1em">
+                <Text>Sorry, applications are no longer being accepted.</Text> 
             </Container>
         )
     }

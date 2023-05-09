@@ -21,6 +21,7 @@ import logo_sri from './logo-sri.png'
 import logo_mit from './logo-mit.png'
 import logo_bu  from './logo-bu.png'
 import logo_ucf from './logo-ucf.png'
+import logo_uaf from './logo-uaf.png'
 
 import { IconEdit } from '@tabler/icons'
 
@@ -85,10 +86,11 @@ const Home = () => {
         { src: logo_sri, alt: "SRI"    },
         { src: logo_mit, alt: "MIT"    },
         { src: logo_bu,  alt: "BU"     },
-        { src: logo_ucf, alt: "UCF"    }
+        { src: logo_ucf, alt: "UCF"    },
+        { src: logo_uaf, alt: "UAF"    }
         ]
 
-    const accepting = true
+    const accepting = process.env.REACT_APP_ACCEPTING === 'true'
 
     return (
         <Container>
@@ -184,9 +186,7 @@ const Home = () => {
 
             <p>
             For more information about the school, please contact{" "}
-            <a href="mailto:shikha.raizada@ucf.edu">shikha.raizada@ucf.edu</a>{" "}
-            or{" "}
-            <a href="mailto:shikha@naic.edu">shikha@naic.edu</a>.
+            <a href="mailto:krywonos@ucf.edu">Andrey Krywonos</a>.
             </p>
 
             <p>
@@ -205,6 +205,7 @@ const Home = () => {
                 <ul>
                   <li>Asti Bhatt</li>
                   <li>Phil Erickson</li>
+                  <li>Craig Heinselman</li>
                 </ul>
               </Grid.Col>
               <Grid.Col sm={3}>
