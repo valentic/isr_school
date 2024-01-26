@@ -4,7 +4,7 @@ import {
     Button, 
     Container, 
     Flex,
-    Grid, 
+    Group,
     Image,
     List,
     SimpleGrid,
@@ -48,32 +48,30 @@ const BannerImages = ({images}) => (
 
 const BannerTitle = ({accepting}) => (
 
-    <Grid justify="space-between" align="center" m="2rem">
-      <Grid.Col span="auto">
-        <Title order={2} c="blue.7">
-          2024 Incoherent Scatter Radar<br/>
-          Summer School<br/>
-          July 22 - 27, 2024
-        </Title>
-      </Grid.Col>
-      <Grid.Col span={3}> 
-        { accepting ? (
-          <Stack>
-            <Button component={Link} to="/apply" size="md" leftSection={<IconEdit />} >
-              Apply now!
-            </Button>
-            <Text color="blue.8" ta="center" size="md" fw={700}> 
-              The deadline is <br/> March 21, 2024
-            </Text>
-          </Stack>) : null 
-        }
-      </Grid.Col>
-    </Grid>
+    <Stack align="center" my="2rem">
+      <Title order={2} c="blue.7" ta="center">
+        2024 Incoherent Scatter Radar Summer School
+      </Title>
+      <Title order={3} c="blue.7">
+        July 22 - 27, 2024
+      </Title>
+      { accepting ? (
+        <Group mt="1rem" justify="center" gap="xl">
+          <Button component={Link} to="/apply" size="md" leftSection={<IconEdit />} >
+            Apply now!
+          </Button>
+          <Text color="blue.8" ta="center" size="md" fw={700}> 
+            The application deadline is <br/> March 21, 2024
+           </Text>
+        </Group>
+        ) : null 
+      }
+    </Stack>
 )
 
 const Logos = ({images}) => (
 
-    <Flex justify="center" gap="md" mt="2rem">
+    <Flex justify="center" gap={{ base: "xs", sm: "md"}} wrap="wrap" mt="2em"> 
       { images.map((image) => (
           <Image 
             key={image.alt} 
@@ -177,23 +175,23 @@ const Home = () => {
           <Text mt="1rem">
             The main objectives of the school are:
           </Text>
-          <List type="ordered" withPadding mt="1rem">
-              <List.Item>provide a "hands-on" learning experience in small groups, </List.Item>
-              <List.Item>promote team-work and collaborative skills, </List.Item>
-              <List.Item>encourage substantial interactions with instructors, and </List.Item>
-              <List.Item>foster an inclusive environment. </List.Item>
+          <List mt="1rem" mx="2rem">
+              <List.Item>Provide a "hands-on" learning experience in small groups</List.Item>
+              <List.Item>Promote team-work and collaborative skills</List.Item>
+              <List.Item>Encourage substantial interactions with instructors</List.Item>
+              <List.Item>Foster an inclusive environment</List.Item>
           </List>
            
           <Text mt="1rem">
             At this school, students will learn:
           </Text>
-          <List withPadding mt="1rem">
-            <List.Item>How the ionosphere forms and why it is important. </List.Item>
-            <List.Item>The physical principles of incoherent scatter radar. </List.Item>
-            <List.Item>The mathematical principles of radar signal processing. </List.Item>
-            <List.Item>How to design and run an ISR experiment. </List.Item>
-            <List.Item>How to extract and visualize data from the Madrigal database.</List.Item>
-            <List.Item>How ISR complements and adds insight to other observations.</List.Item>
+          <List mt="1rem" mx="2rem">
+            <List.Item>How the ionosphere forms and why it is important</List.Item>
+            <List.Item>The physical principles of incoherent scatter radar</List.Item>
+            <List.Item>The mathematical principles of radar signal processing</List.Item>
+            <List.Item>How to design and run an ISR experiment</List.Item>
+            <List.Item>How to extract and visualize data from the Madrigal database</List.Item>
+            <List.Item>How ISR complements and adds insight to other observations</List.Item>
           </List>
 
           <Text mt="1rem">
