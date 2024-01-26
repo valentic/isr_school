@@ -1,0 +1,87 @@
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+
+name = "isr_school"
+dynamic = ["version"]
+description='ISR Summer School Website'
+readme = "README"
+requires-python = ">= 3.9"
+license = { file = "LICENSE" }
+authors = [
+    { name = 'Todd Valentic', email='todd.valentic@gmail.com' }
+]
+
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent"
+]
+
+dependencies = [
+    "pytz",
+    "dateutils",
+    "eventlet",
+    "requests",
+    "bcrypt",
+    "flask",
+    "psycopg2-binary",
+    "sqlalchemy~=1.4",
+    "Flask-SQLAlchemy",
+    "flask-compress",
+    "flask-script",
+    "flask-migrate",
+    "flask-bcrypt",
+    "flask-jwt-extended",
+    "flask-socketio",
+    "flask-restful",
+    "flask-mail",
+    "flask-flatpages",
+    "coverage",
+    "PyJWT",
+    "cryptography",
+    "itsdangerous",
+    "docutils",
+]
+
+[project.optional-dependencies]
+
+test = [
+    "pytest",
+    "pyfakefs"
+    ]
+
+devel = [
+    "build",
+    "pylint",
+    "black",
+    "pip-tools",
+    "ruff"
+    ]
+
+[project.urls]
+
+homepage="https://amisr.com/school"
+repository="https://github.com/valentic/isr_school"
+
+[project.scripts]
+
+server-cmd = "server.commands:cli"
+server-launch = "server.commands:launch"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.dynamic]
+version = { attr = "server.metadata.version" }
+
+[tools.pytest.ini_options]
+addopts = [
+    "--import-mode=importlib"
+]
+
+[tools.ruff.lint]
+select = ["E", "F", "B", "SIM", "D"]
+
