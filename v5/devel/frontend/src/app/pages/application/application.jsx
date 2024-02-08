@@ -38,27 +38,24 @@ const SuccessMessage = () => (
       <Title order={2} c="blue.1"> 
         Application Submitted
       </Title>
-      <Divider />
 
-      <Text>
+      <Divider mb="1rem" />
 
-        <p>
+        <Text>
         Thank you for applying to the ISR Summer School.
-        </p>
+        </Text> 
 
-        <p>
+        <Text> 
         Your application has been received. We will notify you
         once the final selection has been made.
-        </p>
+        </Text> 
 
-        <p>
+        <Text> 
         If you have any questions, please contact{" "}
         <a href="mailto:shikha.raizada@ucf.edu">shikha.raizada@ucf.edu</a>.
-        </p>
+        </Text>
 
-       </Text>
-
-       <Center>
+       <Center mt="1rem">
          <Button component={Link} to="/">Done</Button>
        </Center>
      </Container>

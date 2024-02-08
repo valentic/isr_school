@@ -93,7 +93,7 @@ class submit_application(Resource):
         model.db.session.commit()
 
         send_creation_notify(application)
-        #send_acknowledgment_email(application)
+        send_acknowledgment_email(application)
 
         name = data['firstname'] + ' ' + data['lastname']
         history.add_entry('system','Application received for %s' % name)
