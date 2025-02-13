@@ -1,3 +1,3 @@
-version='6.0.1'
+version='release'
 project='isr_school'
 branch='v6'
