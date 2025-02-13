@@ -52,7 +52,7 @@ const SuccessMessage = () => (
 
         <Text> 
         If you have any questions, please contact{" "}
-        <a href="mailto:shikha.raizada@ucf.edu">shikha.raizada@ucf.edu</a>.
+        <a href="mailto:krywonos@ucf.edu">krywonos@ucf.edu</a>.
         </Text>
 
        <Center mt="1rem">
