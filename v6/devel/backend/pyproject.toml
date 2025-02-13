@@ -1,0 +1,87 @@
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+
+name = "isr_school"
+dynamic = ["version"]
+description='ISR Summer School Website'
+readme = "README"
+requires-python = ">= 3.12"
+license = { file = "LICENSE" }
+authors = [
+    { name = 'Todd Valentic', email='todd.valentic@gmail.com' }
+]
+
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent"
+]
+
+dependencies = [
+    "bcrypt>=4.2.1",
+    "coverage>=7.6.12",
+    "cryptography>=44.0.1",
+    "dateutils>=0.6.12",
+    "docutils>=0.21.2",
+    "eventlet>=0.39.0",
+    "flask>=3.1.0",
+    "flask-bcrypt>=1.0.1",
+    "flask-compress>=1.17",
+    "flask-flatpages>=0.8.3",
+    "flask-jwt-extended>=4.7.1",
+    "flask-mail>=0.10.0",
+    "flask-migrate>=4.1.0",
+    "flask-restful>=0.3.10",
+    "flask-script>=2.0.6",
+    "flask-socketio>=5.5.1",
+    "flask-sqlalchemy>=3.0.5",
+    "itsdangerous>=2.2.0",
+    "psycopg2-binary>=2.9.10",
+    "pyjwt>=2.10.1",
+    "pytz>=2025.1",
+    "requests>=2.32.3",
+    "sqlalchemy~=1.4",
+]
+
+[project.optional-dependencies]
+
+test = [
+    "pytest",
+    "pyfakefs"
+    ]
+
+#devel = [
+#    "build",
+#    "pylint",
+#    "black",
+#    "pip-tools",
+#    "ruff"
+#    ]
+
+[project.urls]
+
+homepage="https://amisr.com/school"
+repository="https://github.com/valentic/isr_school"
+
+[project.scripts]
+
+server-cmd = "server.commands:cli"
+server-launch = "server.commands:launch"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.dynamic]
+version = { attr = "server.metadata.version" }
+
+[tools.pytest.ini_options]
+addopts = [
+    "--import-mode=importlib"
+]
+
+[tools.ruff.lint]
+select = ["E", "F", "B", "SIM", "D"]
+

@@ -1,0 +1,129 @@
+2020-01-30  Todd Valentic
+    - Begin development 
+    - Release 0.0.0 
+
+2020-02-05  Todd Valentic
+    - First deployment 
+    - Release 1.0.1 
+
+2020-02-06  Todd Valentic
+    - Setup school@amisr.com email address
+    - Adjust for responsive design on mobile
+    - Add footer with revision number and admin link
+    - Release 1.0.2
+
+2020-02-07  Todd Valentic
+    - Fix display issue in admin page for applications list
+    - Fix header on small screens 
+    - Release 1.0.3
+
+2020-02-21  Todd Valentic
+    - Fix default value set in degree dropdown
+    - Release 1.0.4
+
+2020-03-06  Todd Valentic
+    - Temporarily use alternate mail address for help
+    - Release 1.0.5
+
+2020-03-06  Todd Valentic
+    - Fix backend handling of unicode characters 
+    - Release 1.0.6
+
+2020-04-21  Todd Valentic
+    - Disable application link
+    - Release 1.0.7
+
+2022-03-18  Todd Valentic
+    - Release 3.0.0
+    - Migration to mantine
+    - Update to latest code base 
+
+2022-03-25  Todd Valentic
+    - Release 3.0.1
+    - Initial deployment to production
+
+2022-03-25  Todd Valentic
+    - Release 3.0.2
+    - Update contact emails
+    - Add committee members to home page
+    - Add link 2021 workshop notes
+
+2022-03-25  Todd Valentic
+    - Release 3.0.3
+    - Make sure api templates are in python package
+
+2022-04-01  Todd Valentic
+    - Release 3.0.4
+    - Add missing created_on in application listing
+    - Fix admin link in creation emails
+
+2022-04-12  Todd Valentic
+    - Release 3.1.0
+    - Add user management
+    - Add user roles
+    - Add application management
+
+2022-04-18  Todd Valentic
+    - Release 3.1.1
+    - Update home page wording
+
+2022-04-22  Todd Valentic
+    - Release 3.1.2
+    - Update application deadline
+    - Add deadline wording near application button
+
+2022-04-28  Todd Valentic
+    - Release 3.1.4
+    - Close application process 
+
+2022-07-08 Todd Valentic
+    - Release 3.1.5
+    - Add link to 2022 school wiki  
+
+2023-01-17 Todd Valentic
+    - Release 4.0.0 (2023 school)
+    - Update sitecmd to latest release
+    - Update packaging to use pyproject.toml
+
+2023-01-17 Todd Valentic
+    - Release 4.0.1 
+    - Fix UAF name 
+    - Fix version info in pyproject.toml
+
+2023-03-06 Todd Valentic
+    - Release 4.0.2
+    - Add Andrey Krywonos (new PI)
+
+2023-03-06 Todd Valentic
+    - Release 4.0.3
+    - Fix typo in names 
+
+2023-03-07 Todd Valentic
+    - Release 4.0.4
+    - Extend deadline to March 17
+
+2023-03-08 Todd Valentic    
+    - Release 4.0.5
+    - Extend deadline to March 24
+    - Fix next/prev navigation in views
+
+2023-05-09 Todd Valentic    
+    - Release 4.0.9
+    - Add new committee members / logos
+    - Update contact info
+    - Disable applications for 2023
+
+2024-01-16 Todd Valentic
+    - Release 5.0.0 (2024 school)
+    - Update sitecmd to release 1.1.6
+    - Update layout
+
+2025-02-11 Todd Valentic
+    - Release 6.0.0 (2025 school)
+    - Update sitecmf to release 1.8
+    - Switch to uv for backend management
+    - Update layout
+
+
+
+

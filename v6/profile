@@ -1,0 +1,5 @@
+export PROJECT=isr_school
+export BRANCH=v6
+export PYTHON=3.12
+export SITEROOT=/school
+export PORT=9805
