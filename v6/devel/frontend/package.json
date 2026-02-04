@@ -1,7 +1,7 @@
 {
   "name": "isr_school",
   "private": true,
-  "version": "release",
+  "version": "6.0.2",
   "type": "module",
   "scripts": {
     "dev": "vite",
