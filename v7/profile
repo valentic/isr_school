@@ -1,0 +1,7 @@
+export BASEDIR=/opt/websites
+export PROJECT=isr_school
+export BRANCH=v7
+export PYTHON=3.12
+export SITEROOT=/school
+export PORT=9806
+export PROJECTDIR=$BASEDIR/$PROJECT/$BRANCH
