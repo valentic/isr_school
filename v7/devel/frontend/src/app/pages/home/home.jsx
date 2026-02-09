@@ -53,7 +53,7 @@ const BannerTitle = ({accepting}) => (
         2026 Incoherent Scatter Radar Summer School
       </Title>
       <Title order={3} c="blue.7">
-        July 10 & July 20 - 25, 2026
+        July 9 & July 20 - 25, 2026
       </Title>
       { accepting ? (
         <Group mt="1rem" justify="center" gap="xl">
@@ -162,7 +162,7 @@ const Home = () => {
           <Text>
             The NSF-funded 2026 Incoherent Scatter Radar (ISR) Summer
             School will be held in Boston, MA. It includes a mandatory
-            one-day virtual session (via Zoom) on July 10, 2026 followed
+            one-day virtual session (via Zoom) on July 9, 2026 followed
             by the in-person school at Boston University July 20-25,
             2026. The summer school’s goal is to train students in the
             theory and concepts of incoherent scatter radar and allows for

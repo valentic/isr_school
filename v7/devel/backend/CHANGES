@@ -130,5 +130,9 @@
     - Updated some npm packages
     - Only send messages to emails without ! prefix
 
+2026-02-09  Todd Valentic
+    - Release 7.0.1
+    - Change virtual date from July 10 to July 9
+
 
 
